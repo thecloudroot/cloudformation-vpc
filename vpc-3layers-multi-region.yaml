@@ -10,15 +10,16 @@ Metadata:
       - ClassB        
 Parameters:
   ClassA:
-    Description: 'Class A of VPC (???.*.*.*/16)'
     Type: Number
     Default: 0
     Description: Put the Cass A of the VPC example = 10.*.*.*/16 , 192.*.*.*/16 , 172.*.*.*/16
+    ConstraintDescription: 'Must be in the range [0-255]'
+    MinValue: 0
+    MaxValue: 255
   ClassB:
-    Description: 'Class B of VPC (*.???.*.*/16)'
     Type: Number
     Default: 0
-    Description: Put the Cass A of the VPC example = *.10.*.*/16 , *.168.*.*/16 , *.8.*.*/16
+    Description: Put the Cass B of the VPC example = *.10.*.*/16 , *.168.*.*/16 , *.8.*.*/16
     ConstraintDescription: 'Must be in the range [0-255]'
     MinValue: 0
     MaxValue: 255
